@@ -1,0 +1,273 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin-top: 3em;
+    width: 100%;
+    margin: auto;
+    font-family: 'Newsreader', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.section {
+    padding-bottom: calc(30px + 9vw);
+}
+
+.section-white {
+    background-color: #FFF;
+}
+
+.section-grey {
+    background-color: #F3F3F3;
+}
+
+.title-section-1::before {
+    content: '';
+    display: block;
+    margin: -1.8em;
+    height: calc(55px + 10vw);
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: rotate(-5deg)translateX(-50%);
+    -ms-transform: rotate(-5deg)translateX(-50%);
+    transform: rotate(-5deg)translateX(-50%);
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    z-index: 150;
+    background-color: #FFF;
+    -webkit-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+    -ms-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+    transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+}
+
+.title-section-2::before {
+    content: '';
+    display: block;
+    margin: -1.8em;
+    height: calc(55px + 10vw);
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: rotate(-5deg)translateX(-50%);
+    -ms-transform: rotate(-5deg)translateX(-50%);
+    transform: rotate(-5deg)translateX(-50%);
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    z-index: 150;
+    background-color: #F3F3F3;
+    -webkit-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+    -ms-transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+    transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+}
+
+.title-section {
+    padding: 50px 0px 80px 0px;
+}
+
+.title {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 -1rem 0 0;
+    font-size: calc(20px + 1.8vw);
+    font-weight: 400;
+    letter-spacing: 1rem;
+    position: relative;
+    z-index: 200;
+}
+
+.title-line {
+    border: 2px solid black;
+    margin: auto;
+    width: calc(50px + 2vw);
+    margin-top: 50px;
+}
+
+.icons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 50px
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon span {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+    padding: 30px 0px 30px 0px;
+    letter-spacing: 0.1rem;
+    margin-right: -0.1rem;
+}
+
+.icon img {
+    width: 60px;
+}
+
+.intro {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.intro .myself {
+    font-size: 1.6em;
+    width: 30%;
+    text-align: right;
+    line-height: 1.428em;
+    letter-spacing: .025em;
+}
+
+.intro .business {
+    color: #9b9ba3;
+    width: 30%;
+    line-height: 1.85em;
+    letter-spacing: .05em;
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+
+.description {
+    width: 50%;
+    line-height: 1.85em;
+    letter-spacing: .05em;
+    color: #9B9BA3;
+    text-align: center;
+    margin: auto;
+}
+
+.category {
+    border: 1px solid #e8e8e8;
+    border-style: solid;
+    flex: 1 0 25%;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    margin: 20px 0 0 2%;
+}
+
+.category .fa {
+    color: #87c6bd;
+    font-size: 2.5em;
+}
+
+.title-category {
+    font-size: 1.2em;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-right: -0.1rem;
+}
+
+.title-line-category {
+    border: 1px solid #87c6bd;
+    margin: auto;
+    width: calc(15px + 2vw);
+    margin-top: -10px;
+}
+
+.category-description {
+    color: #797979;
+    line-height: 1.7em;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo a {
+    opacity: 0.5;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+.logo a:hover {
+    opacity: 1;
+    transition: opacity 0.3 linear;
+}
+
+.email {
+    font-size: calc(1.3em + 1vw);
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+}
+
+.email a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.email a:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .icons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro {
+        width: 90%;
+        flex-direction: column;
+    }
+    .intro .myself {
+        font-size: 1.5em;
+        font-weight: 400;
+        width: 100%;
+        text-align: left;
+        line-height: 1.428em;
+        letter-spacing: .025em;
+        padding-bottom: 25px;
+    }
+    .intro .business {
+        color: #9b9ba3;
+        width: 100%;
+        line-height: 1.85em;
+        letter-spacing: .05em;
+        padding-bottom: 25px;
+    }
+    .sub-section {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .description {
+        width: 90%;
+    }
+}
